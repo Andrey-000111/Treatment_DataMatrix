@@ -3,7 +3,7 @@ import csv
 
 
 def process_files(input_folder, output_folder):
-    folder_path = os.path.join(os.path.expanduser('../input_folder'))
+    folder_path = os.path.join(os.path.expanduser('../input_folder')) #just comment
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
     """Создаем новую папку для сохранения файлов без первого сивола"""
