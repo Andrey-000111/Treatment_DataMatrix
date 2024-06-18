@@ -45,7 +45,7 @@ def process_files(input_folder, output_folder):
                 """Записываем отчет"""
                 report_file.write(f'File: {file_name}\n')
                 report_file.write(f'Lines processed: {processed_lines}\n')
-                report_file.write(f'Lines with first symbol removed: {', '.join(map(str, lines_with_fist_symbol_removed))}\n')
+                report_file.write(f'Lines with first symbol removed: ({' ,'.join(map(str, lines_with_fist_symbol_removed))}\n')
                 report_file.write('Characters count per line: \n')
                 for i, line in enumerate(lines, 1):
                     report_file.write(f'Line {i}: {len(line)}\n')
